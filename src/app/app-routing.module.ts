@@ -14,7 +14,7 @@ const routes: Routes = [
       .then((m) => m.DashboardRoutingModule)
   },
   {
-    path: '**', redirectTo: 'auth'
+    path: '**', redirectTo: 'auth/login'
   }
 ];
 

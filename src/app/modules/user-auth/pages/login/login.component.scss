@@ -1,15 +1,15 @@
 .left-side {
-  width: 39.188rem;
+  // width: 39.188rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  // border: 1px solid black;
 }
 
 .right-side {
   display: flex;
   justify-content: center;
   align-items: center;
-  // border: 1px solid black;
   flex-grow: 1;
 }
 
@@ -74,7 +74,7 @@ label {
 }
 
 .form-input {
-  height: 50px;
+  height: 45px;
   background: #ffffff;
   border: 0.6px solid #d1d1d1;
   box-sizing: border-box;
