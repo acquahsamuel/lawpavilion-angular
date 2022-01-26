@@ -4,10 +4,10 @@ const app = express();
 
 if (process.env.NODE_ENV === "production") {
   // Serve only the static files form the dist directory
-  app.use(express.static(__dirname + "/dist/.."));
+  app.use(express.static(__dirname + "/dist/lawpavilion"));
 
   app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname + "/dist/../index.html"));
+    res.sendFile(path.join(__dirname + "/dist/lawpavilion/index.html"));
   });
 }
 
