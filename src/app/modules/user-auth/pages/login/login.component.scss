@@ -1,20 +1,27 @@
-.signup-container {
+.left-side {
+  width: 39.188rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  box-sizing: border-box;
-  background: rgb(224, 223, 221);
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid black;
+  flex-grow: 1;
+}
+
+.signup-container {
+  display: flex;
+  min-height: 100vh;
 }
 
 .form {
   border-radius: 5px;
-  background: white;
-  // height: 30rem;
   width: 20rem;
   padding: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .is-invalid {
@@ -26,7 +33,16 @@
 }
 
 h3 {
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
+  width: 411px;
+  height: 120px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  color: #102352;
 }
 
 label {
@@ -58,12 +74,25 @@ label {
 }
 
 .form-input {
-  padding: 0.7rem;
-  border-radius: 0.4rem;
-  outline: none;
-  font-size: 13px;
-  border: 1px solid rgb(226, 224, 221);
+  width: 440.8px;
+  height: 50px;
+  background: #ffffff;
+  border: 0.6px solid #d1d1d1;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
+
+.form-input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 149.3%;
+  color: #707070;
+  font-size: 1.3em;
+}
+
+// .form-input:focus {
+// }
 
 .form-input:focus {
   outline: blue;
@@ -73,10 +102,9 @@ label {
 .btn {
   border: none;
   outline: none;
-  padding: 13px 20px;
-  width: 100%;
-  border-radius: 5px;
-  color: white;
+  width: 440.8px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 .btn:hover {
@@ -86,6 +114,10 @@ label {
 .btn-dark {
   background: rgb(20, 26, 26);
   margin-bottom: 1rem;
+}
+
+.btn-blue {
+  background: #2c61e4;
 }
 
 .border-line {
@@ -107,13 +139,14 @@ label {
 
 .btn-cta {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  border: 1px solid black;
   width: 100%;
 
   span {
-    margin-right: 1rem;
     font-size: 15px;
+    // border: 1px solid black;
   }
 
   a {
@@ -131,5 +164,21 @@ label {
   .form {
     width: 17rem;
     padding: 2rem;
+  }
+
+  .signup-container {
+    flex-direction: column;
+    // width: 60%;
+  }
+
+  .right-side {
+    // border: 1px solid black;
+    // width: 100%;
+  }
+
+  .left-side {
+    // max-width: 100%;
+    display: none;
+    border: 1px solid black;
   }
 }

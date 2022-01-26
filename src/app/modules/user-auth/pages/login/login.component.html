@@ -1,66 +1,72 @@
 <div class="signup-container">
   <!-- <app-logo></app-logo> -->
-  <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <h3>Login</h3>
-    <div class="btn-group">
-      <button class="btn btn-default">Login up with Google</button>
-    </div>
 
-    <div class="form-group">
-      <label for=""> Email</label>
-      <input
-        class="form-input"
-        type="email"
-        required
-        placeholder="username@gmail.com"
-        formControlName="email"
-        [ngClass]="{ 'is-invalid': submitted && formField.email.errors }"
-      />
-      <div *ngIf="submitted && formField.email.errors" class="invalid-feedback">
-        <div *ngIf="formField.email.errors.required">Email is required</div>
-        <div *ngIf="formField.email.errors.email">
-          Email must be a valid email address
+  <div class="left-side">
+    <h2>Hello world</h2>
+    <div class="image-container">
+      <img src="" alt="" srcset="" />
+    </div>
+  </div>
+  <div class="right-side">
+    <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <h3>
+        Sign in your EHR <br />
+        account
+      </h3>
+      <div class="form-group">
+        <label for=""> Email</label>
+        <input
+          class="form-input"
+          type="email"
+          required
+          placeholder="username@gmail.com"
+          formControlName="email"
+          [ngClass]="{ 'is-invalid': submitted && formField.email.errors }"
+        />
+        <div
+          *ngIf="submitted && formField.email.errors"
+          class="invalid-feedback"
+        >
+          <div *ngIf="formField.email.errors.required">Email is required</div>
+          <div *ngIf="formField.email.errors.email">
+            Email must be a valid email address
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for=""> Password </label>
-      <input
-        class="form-input"
-        type="password"
-        required
-        placeholder="eg. xxx-xxx-xxx"
-        formControlName="password"
-      />
-      <div
-        *ngIf="submitted && formField.password.errors"
-        class="invalid-feedback"
-      >
-        <div *ngIf="formField.password.errors.required">
-          Password is required
-        </div>
-        <div *ngIf="formField.password.errors.minlength">
-          Password must be at least 6 characters
+      <div class="form-group">
+        <label for=""> Password </label>
+        <input
+          class="form-input"
+          type="password"
+          required
+          placeholder="eg. xxx-xxx-xxx"
+          formControlName="password"
+        />
+        <div
+          *ngIf="submitted && formField.password.errors"
+          class="invalid-feedback"
+        >
+          <div *ngIf="formField.password.errors.required">
+            Password is required
+          </div>
+          <div *ngIf="formField.password.errors.minlength">
+            Password must be at least 6 characters
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="form-group terms">
-      <input type="checkbox" />
-      <p>I agree with <a href=""> Term </a> and <a href=""> Privacy </a></p>
-    </div>
+      <div class="form-group terms">
+        <p><a href=""> Forgot password? </a></p>
+      </div>
+      <button class="btn btn-blue">Login</button>
 
-    <button class="btn btn-dark">Login</button>
-
-    <hr class="border-line" />
-    <div class="btn-cta">
-      <span>Don't have an account</span>
-      <a routerLink="/signup"> Signup </a>
-    </div>
-    <div class="btn-cta">
-      <span> Forgot password </span>
-      <a routerLink="/reset-password"> Password reset </a>
-    </div>
-  </form>
+      <div class="form-group">
+        <div class="btn-cta">
+          <span> Don't have an account? </span>
+          <a routerLink="/reset-password"> Meet up with the IT guy </a>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
