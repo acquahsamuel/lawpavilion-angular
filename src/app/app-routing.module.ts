@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'auth',
-    // canActivate : []
     loadChildren: () =>
       import('./modules/user-auth/user-auth-routing.module')
         .then((m) => m.UserAuthRoutingModule),
@@ -13,10 +12,9 @@ const routes: Routes = [
     path: "dashboard",
     loadChildren: () => import('./modules/dashboard/dashboard-routing.module')
       .then((m) => m.DashboardRoutingModule)
-
   },
   {
-    path: '**', redirectTo: 'home'
+    path: '**', redirectTo: 'auth'
   }
 ];
 
