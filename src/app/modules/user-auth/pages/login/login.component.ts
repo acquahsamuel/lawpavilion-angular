@@ -39,27 +39,27 @@ export class LoginComponent implements OnInit {
 
   // onSubmit()
   onSubmit() {
-    this.submitted = true;
-    this.alterService.clear();
+    // this.submitted = true;
+    // this.alterService.clear();
 
-    if (this.loginForm.invalid) {
-      return;
-    }
+    // if (this.loginForm.invalid) {
+    //   return;
+    // }
 
-    this.loading = true;
-    this.authService.login(this.formField.username.value, this.formField.password.value)
-      .pipe(first()).subscribe({
-        next: () => {
-          const returnUrl = this.route.snapshot.queryParamMap['returnUrl'] || '/';
-          this.router.navigateByUrl(returnUrl);
-        },
-        error: error => {
-          this.alterService.error(error);
-          this.loading = false;
-        }
-      })
+    // this.loading = true;
+    // this.authService.login(this.formField.username.value, this.formField.password.value)
+    //   .pipe(first()).subscribe({
+    //     next: () => {
+    //       const returnUrl = this.route.snapshot.queryParamMap['returnUrl'] || '/';
+    //       this.router.navigateByUrl(returnUrl);
+    //     },
+    //     error: error => {
+    //       this.alterService.error(error);
+    //       this.loading = false;
+    //     }
+    //   })
+
+    this.router.navigateByUrl('dashboard/patient-details')
+
   }
-
-
-
 }

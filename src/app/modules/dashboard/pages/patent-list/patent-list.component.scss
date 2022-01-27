@@ -4,7 +4,16 @@
 
 table {
   width: 100%;
+  min-height: 100vh;
   justify-content: space-evenly;
+  box-shadow: none;
+  background: #fff;
+  margin-bottom: 1rem;
+  // border: 1px solid black;
+}
+
+table td {
+  padding: 0.6rem;
 }
 
 #profileImage {

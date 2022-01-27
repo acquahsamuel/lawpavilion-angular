@@ -22,12 +22,6 @@ export class DashboardComponent implements OnInit {
   username = 'username';
   userProfile = './assets/images/placeholder.png';
 
-  
-  links = [
-    { path: 'your-posts', icon: 'business', title: 'Your Posts' },
-    { path: 'post-job', icon: 'work', title: 'Post Job' },
-  ]
-
   isLoading = false;
 
   user = {
@@ -36,7 +30,6 @@ export class DashboardComponent implements OnInit {
   }
 
   logout() {
-    // this.router.navigateByUrl('home');
+    this.router.navigateByUrl('/login')
   }
-
 }
