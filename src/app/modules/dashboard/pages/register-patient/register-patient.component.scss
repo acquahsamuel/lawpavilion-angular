@@ -25,18 +25,24 @@
 
 .form-input,
 .form-select {
-  padding: 0.7rem;
+  padding: 1rem;
   border-radius: 0.4rem;
   outline: none;
-  font-size: 13px;
+  font-size: 1rem;
   box-sizing: border-box;
-  border: 1px solid rgb(219, 217, 217);
+  border: 1px solid rgb(219, 219, 219);
   width: 100%;
   background-color: white;
 }
 
+
+.form-input::placeholder{
+  font-size: 1rem;
+}
+
 .form-select option {
-  font-size: 1.2rem;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 #patient-details {
@@ -50,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
 }
 
 .form-select option {
@@ -94,14 +100,16 @@ mat-form-field {
 
 .btn {
   border: none;
-  padding: 1.2rem 2.3rem;
+  padding: 1.3rem 3rem;
   color: white;
   margin-top: 0.5rem;
   border-radius: 0.8rem;
+  margin-left: 5px;
   // text-align: right;
+ 
 }
 
-.btn-cta{
+.btn-cta {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -109,8 +117,15 @@ mat-form-field {
 }
 
 .btn-default {
-  background: #2C61E4;;
-  // background: rgba(68, 119, 247, 0.25);
+  background: #2c61e4;
+}
+
+
+.btn-outline{
+  border: 1px solid #2c61e4;
+  color: blue;
+  background: #fff;
+
 }
 
 @media screen and (max-width: 500px) {
