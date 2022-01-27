@@ -1,9 +1,21 @@
 .left-side {
-  // width: 39.188rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  // border: 1px solid black;
+  flex-direction: column;
+}
+
+.left-side-cta {
+  h4 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #102352;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 .right-side {
@@ -11,7 +23,6 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  // border: 1px solid black;
 }
 
 .signup-container {
@@ -19,10 +30,14 @@
   min-height: 100vh;
 }
 
-// .image-container {}
+// .image-container {
+//   border: 1px solid blue;
+// }
 
 .image-container img {
   border-radius: 100%;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .form {
