@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AuthService } from 'src/app/shared/services/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AlertService } from 'src/app/shared/services/alert.service';
-import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -23,8 +20,6 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private router: Router,
     private route: ActivatedRoute,
-    private alterService: AlertService,
-    private authService: AuthService
   ) { }
 
   ngOnInit(): void {

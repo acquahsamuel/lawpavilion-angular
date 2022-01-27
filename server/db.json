@@ -1,94 +1,87 @@
 {
-    "jobs": [
+    "patient": [
         {
-            "name": "Backend Engineers",
-            "position": "Senior Systems Engineer",
-            "locationAllowed": "USA",
-            "jobCategory": "Dream Oval Ghana",
-            "jobTags": [
-                "Open team",
-                "Computer Engineer",
-                "DevOps",
-                "Lab"
-            ],
-            "minimumSalary": "2000",
-            "maximumSalary": "8000",
-            "currency": "USD",
-            "salaryInterval": "yearly",
-            "jobStatus": "full-time",
-            "jobDescription": "We want to be the definitive food company - the app you go to any time you have a hunger pang. We are transforming the way people think about food. We are providing services",
-            "applicationURL": "https://mycompany.com/application",
-            "applyToEmail": "companyemail09@gmail.com",
-            "user": "6163439ef04c8f59b734a4e3",
-            "company": "6166a9f1e420ee9791f6e640"
+            "id": 1,
+            "profileImage": "assets/images/person_3.jpg",
+            "name": "Evans Acquah",
+            "age": 30,
+            "phoneNumber": "+234 (0) 8122322",
+            "address": "3517 W.Gray St.Utica",
+            "url" : "http://localhost:4200/dashboard/patient-details/23"
         },
         {
-            "name": "Backend Engineers",
-            "position": "Senior Systems Engineer",
-            "locationAllowed": "USA",
-            "jobCategory": "Dream Oval Ghana",
-            "jobTags": [
-                "Open team",
-                "Computer Engineer",
-                "DevOps",
-                "Lab"
-            ],
-            "minimumSalary": "2000",
-            "maximumSalary": "8000",
-            "currency": "USD",
-            "salaryInterval": "yearly",
-            "jobStatus": "full-time",
-            "jobDescription": "We want to be the definitive food company - the app you go to any time you have a hunger pang. We are transforming the way people think about food. We are providing services",
-            "applicationURL": "https://mycompany.com/application",
-            "applyToEmail": "companyemail09@gmail.com",
-            "user": "6163439ef04c8f59b734a4e3",
-            "company": "6166a9f1e420ee9791f6e640",
-            "timeAgo" : "2d"
+            "id": 2,
+            "profileImage": "assets/images/person_1.jpg",
+            "name": "Peter Acquah",
+            "age": 30,
+            "phoneNumber": "+234 (0) 8122322",
+            "address": "3517 W.Gray St.Utica",
+            "url" : "http://localhost:4200/dashboard/patient-details/23"
         },
         {
-            "name": "Fronted Engineers",
-            "position": "Senior Systems Engineer",
-            "locationAllowed": "USA",
-            "jobCategory": "Dream Oval Ghana",
-            "jobTags": [
-                "Open team",
-                "Computer Engineer",
-                "DevOps",
-                "Lab"
-            ],
-            "minimumSalary": "2000",
-            "maximumSalary": "8000",
-            "currency": "USD",
-            "salaryInterval": "yearly",
-            "jobStatus": "full-time",
-            "jobDescription": "We want to be the definitive food company - the app you go to any time you have a hunger pang. We are transforming the way people think about food. We are providing services",
-            "applicationURL": "https://mycompany.com/application",
-            "applyToEmail": "companyemail09@gmail.com",
-            "user": "6163439ef04c8f59b734a4e3",
-            "company": "6166a9f1e420ee9791f6e640",
-            "timeAgo" : "1 month"
+            "id": 3,
+            "profileImage": "assets/images/person_4.jpg",
+            "name": "Connect Jou",
+            "age": 30,
+            "phoneNumber": "+234 (0) Connect",
+            "address": "3517 W.Gray St.Utica",
+            "url" : "http://localhost:4200/dashboard/patient-details/23"
         },
         {
-            "name": "Middle Engineers",
-            "position": "Senior Systems Engineer",
-            "locationAllowed": "USA",
-            "jobCategory": "Dream Oval Ghana",
-            "jobTags": [
-                "Open team",
-                "Computer Engineer",
-                "DevOps",
-                "Lab"
-            ],
-            "minimumSalary": "2000",
-            "maximumSalary": "8000",
-            "currency": "USD",
-            "salaryInterval": "yearly",
-            "jobStatus": "full-time",
-            "jobDescription": "We want to be the definitive food company - the app you go to any time you have a hunger pang. We are transforming the way people think about food. We are providing services",
-            "applicationURL": "https://mycompany.com/application",
-            "applyToEmail": "companyemail09@gmail.com",
-            "user": "6163439ef04c8f59b734a4e3",
-            "company": "6166a9f1e420ee9791f6e640"
+            "id": 4,
+            "profileImage": "assets/images/person_3.jpg",
+            "name": "Samuel Me",
+            "age": 30,
+            "phoneNumber": "+234 (0) 8122322",
+            "address": "3517 W.Gray St.Utica"
+        },
+        {
+            "id": 5,
+            "profileImage": "assets/images/person_2.jpg",
+            "name": "Wari Joi",
+            "age": 30,
+            "phoneNumber": "+234 (0) 8122322",
+            "address": "3517 W.Gray St.Utica"
+        },
+        {
+            "id": 6,
+            "profileImage": "assets/images/person_1.jpg",
+            "name": "Perton Lorem",
+            "age": 30,
+            "phoneNumber": "+234 (0) 8122322",
+            "address": "3517 W.Gray St.Utica"
+        },
+        {
+            "id": 7,
+            "profileImage": "assets/images/person_4.jpg",
+            "name": "Instact Micheal",
+            "age": 30,
+            "phoneNumber": "+234 (0) 8122322",
+            "address": "3517 W.Gray St.Utica"
+        },
+        {
+            "id": 8,
+            "profileImage": "assets/images/person_4.jpg",
+            "name": "Prosper Sedem",
+            "age": 30,
+            "phoneNumber": "+234 (0) 8122322",
+            "address": "3517 W.Gray St.Utica"
+        },
+        {
+            "id": 9,
+            "profileImage": "assets/images/person_3.jpg",
+            "name": "Micheal Jordan",
+            "age": 30,
+            "phoneNumber": "+234 (0) 8122322",
+            "address": "3517 W.Gray St.Utica"
+        },
+        {
+            "id": 10,
+            "profileImage": "assets/images/person_2.jpg",
+            "name": "Robert Lardon",
+            "age": 30,
+            "phoneNumber": "+234 (0) 8122322",
+            "address": "3517 W.Gray St.Utica"
         }
     ]
 }

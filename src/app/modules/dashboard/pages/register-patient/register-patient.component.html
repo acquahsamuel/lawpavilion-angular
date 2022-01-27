@@ -6,7 +6,41 @@
       </button> -->
 
       <mat-stepper [linear]="isLinear" #stepper>
-        <mat-step [stepControl]="firstFormGroup">
+        <mat-step [stepControl]="patientdetails">
+          <div class="form-group">
+            <label for=""> Job Title </label>
+            <input
+              class="form-input"
+              formControlName="position"
+              type="text"
+              placeholder=""
+            />
+           
+          </div>
+
+          <div class="form-group">
+            <label for=""> Application Link or Email </label>
+            <input
+              class="form-input"
+              formControlName="position"
+              type="email"
+              placeholder=""
+            />
+          </div>
+
+        
+          <p>Tell us More about your Company</p>
+          <div class="form-group">
+            <label for=""> Company Name </label>
+            <input
+              class="form-input"
+              formControlName="position"
+              type="text"
+              placeholder=""
+            />
+          </div>
+        </mat-step>
+        <mat-step [stepControl]="other" label="Fill out your address">
           <div class="form-group">
             <label for=""> Job Title </label>
             <input
@@ -41,41 +75,9 @@
             />
           </div>
         </mat-step>
-        <mat-step [stepControl]="secondFormGroup" label="Fill out your address">
-          <div class="form-group">
-            <label for=""> Job Title </label>
-            <input
-              class="form-input"
-              formControlName="position"
-              type="text"
-              placeholder=""
-            />
-            <span class="text-small">
-              Example: “Senior Designer”. Titles must describe one position.
-            </span>
-          </div>
 
-          <div class="form-group">
-            <label for=""> Application Link or Email </label>
-            <input
-              class="form-input"
-              formControlName="position"
-              type="email"
-              placeholder=""
-            />
-          </div>
+        
 
-          <p>Tell us More about your Company</p>
-          <div class="form-group">
-            <label for=""> Company Name </label>
-            <input
-              class="form-input"
-              formControlName="position"
-              type="text"
-              placeholder=""
-            />
-          </div>
-        </mat-step>
         <mat-step>
           <ng-template matStepLabel>Done</ng-template>
           <p>You are now done.</p>

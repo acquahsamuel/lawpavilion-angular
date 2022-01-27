@@ -2,20 +2,31 @@
   margin: 0 auto;
 }
 
+h2 {
+  margin: 2rem 5rem;
+  font-size: 2rem;
+}
+
 table {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   min-height: 100vh;
-  justify-content: space-evenly;
   box-shadow: none;
   background: #fff;
   margin-bottom: 1rem;
-  // border: 1px solid black;
 }
 
 table td {
   padding: 0.6rem;
+  border-bottom: 1px solid rgb(247, 243, 243);
+  padding: 0 2rem;
+}
+
+mat-header-cell {
+  border: 1px solid black;
 }
 
 #profileImage {
-  max-width: 30px;
+  max-width: 50px;
+  border-radius: 100px;
 }

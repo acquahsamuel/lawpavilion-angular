@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { UserAuthModule } from './modules/user-auth/user-auth.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 
@@ -21,7 +20,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     UserAuthModule,
     DashboardModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
 
   providers: [],

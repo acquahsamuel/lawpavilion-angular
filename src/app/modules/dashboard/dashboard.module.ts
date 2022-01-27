@@ -6,18 +6,17 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { PatentListComponent } from './pages/patent-list/patent-list.component';
 import { RegisterPatientComponent } from './pages/register-patient/register-patient.component';
 
-
 @NgModule({
   declarations: [
     DashboardComponent,
     PatentListComponent,
-    RegisterPatientComponent
+    RegisterPatientComponent,
   ],
 
   imports: [
     CommonModule,
     MaterialModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
   ]
 })
 

@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NotificationService } from 'src/app/shared/services/notification.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AlertService } from 'src/app/shared/services/alert.service';
+import { FormControl, NgForm, FormGroupDirective, FormGroup, Validators, FormBuilder, Form } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
-import { FormControl, NgForm, FormGroupDirective, FormGroup, Validators, FormBuilder } from '@angular/forms';
-
 
 /** Error when invalid control is dirty, touched, or submitted. */
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -33,16 +30,17 @@ export class RegisterPatientComponent implements OnInit {
   isLinear = false;
   submitted = false;
   postJobForm: FormGroup;
-  firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
 
+
+  patientdetails: FormGroup;
+  other: FormGroup;
+  nextOfKin: FormGroup;
+  hmo: FormGroup;
 
   constructor(
-    private notification: NotificationService,
     private formBuilder: FormBuilder,
     private router: Router,
     private route: ActivatedRoute,
-    private alertService: AlertService
   ) { }
 
   ngOnInit(): void {
@@ -55,9 +53,7 @@ export class RegisterPatientComponent implements OnInit {
   get formField() { return this.postJobForm.controls }
 
 
-  onSubmit() {
-
-  }
+  onSubmit() {  }
 
 
 }
