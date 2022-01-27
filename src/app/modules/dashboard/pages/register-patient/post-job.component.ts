@@ -30,8 +30,11 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 
 export class PostJobComponent implements OnInit {
   loading = false;
+  isLinear = false;
   submitted = false;
   postJobForm: FormGroup;
+  firstFormGroup: FormGroup;
+  secondFormGroup: FormGroup;
 
 
   constructor(

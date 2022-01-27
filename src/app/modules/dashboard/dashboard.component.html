@@ -2,48 +2,35 @@
   <mat-drawer #drawer class="dashboard-sidenav" mode="side" opened>
     <div class="sidebar-wrapper">
       <div class="logo">
-        <img
+        <!-- <img
           src="./assets/images/job-logo-dark.svg"
           class="logo-image"
           alt="user profile"
-        />
+        /> -->
+        <p>Logo</p>
       </div>
 
-      <div
-        class="link-container"
-        *ngFor="let link of links"
-        routerLinkActive="div-active"
-      >
-        <a
-          mat-button
-          class="nav-link"
-          [routerLink]="link.path"
-          routerLinkActive="active"
-        >
-          <mat-icon class="mat-18 icon">{{ link.icon }}</mat-icon>
-          {{ link.title }}
-        </a>
+      <hr />
+      <div class="footer">
+        <p class="username-tag"> </p>
+        <button class="btn btn-blue-light"><mat-icon> logout </mat-icon> Logout</button>
       </div>
     </div>
   </mat-drawer>
 
   <div class="dashboard-sidenav-content">
-    <div class="">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        <mat-icon
-          aria-hidden="false"
-          class="menu-icon"
-          aria-label="Example home icon"
-          >menu</mat-icon
-        >
-      </button>
+    <div class="search-container">
+      <input
+        class="form-input"
+        type="text"
+        placeholder="Search for patient name...."
+      />
+      <i class=""> <mat-icon> fiber_manual_record </mat-icon> </i>
     </div>
 
     <div class="image-container">
       <img [src]="userProfile" class="user-image" alt="profile image" />
-      <button mat-button [matMenuTriggerFor]="menu" class="user-title">
-        {{ username }} <mat-icon>keyboard_arrow_down </mat-icon>
-      </button>
+
       <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="logout()">
           Logout <mat-icon> power_settings_new </mat-icon>

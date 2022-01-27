@@ -22,13 +22,10 @@ export class DashboardComponent implements OnInit {
   username = 'username';
   userProfile = './assets/images/placeholder.png';
 
-
+  
   links = [
-    // { path: 'dashboard', icon: 'dashboard', title: 'Dashboard' },
     { path: 'your-posts', icon: 'business', title: 'Your Posts' },
     { path: 'post-job', icon: 'work', title: 'Post Job' },
-    { path: 'profile', icon: 'account_circle', title: 'Profile' },
-    { path: 'logout', icon: 'exit_to_app', title: 'Logout' },
   ]
 
   isLoading = false;

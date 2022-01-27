@@ -6,13 +6,14 @@
 
 .dashboard-sidenav {
   width: 250px;
+  background: #06207a;
+  color: #fff;
 }
 
 .logo {
   display: flex;
   align-items: flex-start;
   padding: 1rem 1.5rem;
-  background-color: bisque;
 }
 
 .logo-image {
@@ -25,6 +26,17 @@
   margin-left: 1.5rem;
 }
 
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid brown;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+
+
 .nav-link {
   height: 45px;
   display: flex;
@@ -32,34 +44,35 @@
   align-items: center;
   flex-direction: row;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: normal;
   text-align: left;
 }
 
-
 .dashboard-sidenav-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
-  background-color: rgb(233, 233, 233);
+  height: 60px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
-.mat-drawer-content {
-  background-color: whitesmoke;
+.form-input {
+  padding: 1rem;
+  width: 500px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-left: 3rem;
+  border: 1px solid rgb(207, 205, 205);
+  // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+
 
 .main-body {
   width: 100%;
-  // padding: 2rem 1rem;
-  // margin: 0 auto;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 }
 
 .image-container {
@@ -67,13 +80,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5px;
+  margin-right: 1.4rem;
+  border: 1px solid blue;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-container mat-icon{
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  color: dodgerblue;
+
 }
 
 .user-image {
-  border-radius: 600px;
+  border-radius: 100%;
   height: 3rem;
-  width: 2.8rem;
+  width: 3rem;
 }
 
 .main-left {

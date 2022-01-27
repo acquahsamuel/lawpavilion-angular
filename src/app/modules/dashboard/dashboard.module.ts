@@ -4,8 +4,8 @@ import { MaterialModule } from 'src/app/material.module';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { YourPostsComponent } from './pages/your-posts/your-posts.component';
-import { PostJobComponent } from './pages/post-job/post-job.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+import { PostJobComponent } from './pages/register-patient/post-job.component';
+import { ProfileComponent } from './pages/patient-list/profile.component';
 
 
 @NgModule({
