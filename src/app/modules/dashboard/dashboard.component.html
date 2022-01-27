@@ -5,20 +5,23 @@
         <p>Logo</p>
 
         <nav class="navigation">
-          <button class="btn btn-blue-light">
-            <a routerLink="patient-details"> Patient Register </a>
-          </button>
-          <button class="btn btn-blue-light">
-            <a routerLink="register-patient"> Patient List </a>
-          </button>
+          <a class="btn btn-blue-light" routerLink="patient-details">
+            Patient Register
+            <mat-icon>people_outline </mat-icon>
+          </a>
+          <a class="btn btn-blue-light" routerLink="register-patient">
+            Patient List
+            <mat-icon>person_add</mat-icon>
+          </a>
         </nav>
       </div>
 
-
       <div class="footer">
         <p class="username-tag">Jordan Peterson</p>
-        <!-- <hr /> -->
-        <button (click)="logout()" class="btn btn-blue-light">Logout</button>
+        <button (click)="logout()" class="btn btn-blue-light">
+          <mat-icon> power_settings_new </mat-icon>
+          Logout
+        </button>
       </div>
     </div>
   </mat-drawer>
