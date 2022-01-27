@@ -2,18 +2,15 @@
   width: 71.25rem;
   margin: 0 auto;
   box-sizing: border-box;
-  // background: rgb(156, 127, 98);
-
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 93vh;
+  min-height: 93vh;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  // padding: 1rem;
   outline: none;
   width: 100%;
 }
@@ -35,14 +32,14 @@
   background-color: white;
 }
 
-
-.form-input::placeholder{
+.form-input::placeholder {
   font-size: 1rem;
 }
 
 .form-select option {
-  font-size: 2rem;
+  font-size: 1.1rem;
   padding: 1rem;
+  font-family: inherit;
 }
 
 #patient-details {
@@ -57,10 +54,6 @@
   align-items: center;
   justify-content: space-between;
   width: 90%;
-}
-
-.form-select option {
-  font-size: 0.8rem;
 }
 
 .text-small {
@@ -105,27 +98,22 @@ mat-form-field {
   margin-top: 0.5rem;
   border-radius: 0.8rem;
   margin-left: 5px;
-  // text-align: right;
- 
 }
 
 .btn-cta {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-
 }
 
 .btn-default {
   background: #2c61e4;
 }
 
-
-.btn-outline{
+.btn-outline {
   border: 1px solid #2c61e4;
   color: blue;
   background: #fff;
-
 }
 
 @media screen and (max-width: 500px) {
