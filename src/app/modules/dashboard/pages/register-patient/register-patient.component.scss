@@ -2,12 +2,18 @@
   width: 71.25rem;
   margin: 0 auto;
   box-sizing: border-box;
+  // background: rgb(156, 127, 98);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93vh;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  // padding: 1rem;
   outline: none;
   width: 100%;
 }
@@ -26,6 +32,11 @@
   box-sizing: border-box;
   border: 1px solid rgb(219, 217, 217);
   width: 100%;
+  background-color: white;
+}
+
+.form-select option {
+  font-size: 1.2rem;
 }
 
 #patient-details {
@@ -39,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
 }
 
 .form-select option {
@@ -59,8 +70,21 @@ mat-horizontal-stepper {
 }
 
 textarea {
-  outline: none;
-  border-radius: 0.2rem;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+textarea:focus {
+  border: 1px solid rgb(204, 196, 196);
+}
+
+mat-form-field {
   width: 100%;
 }
 
@@ -70,14 +94,23 @@ textarea {
 
 .btn {
   border: none;
-  padding: 0.8rem 1.2rem;
+  padding: 1.2rem 2.3rem;
   color: white;
   margin-top: 0.5rem;
   border-radius: 0.8rem;
+  // text-align: right;
+}
+
+.btn-cta{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
 }
 
 .btn-default {
-  background-color: rgb(15, 12, 12);
+  background: #2C61E4;;
+  // background: rgba(68, 119, 247, 0.25);
 }
 
 @media screen and (max-width: 500px) {
@@ -87,10 +120,8 @@ textarea {
   }
 
   .form {
-    // width: 100%;
     overflow: hidden;
     display: flex;
-    // width: 100%;
   }
 
   .form-input {

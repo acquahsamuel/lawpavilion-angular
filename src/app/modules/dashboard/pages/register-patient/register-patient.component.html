@@ -1,9 +1,5 @@
 <section class="container">
   <form class="form" (ngSubmit)="onSubmit()">
-    <!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
-        {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
-      </button> -->
-
     <mat-stepper [linear]="isLinear" #stepper>
       <mat-step [stepControl]="patientdetails" label="Patient Details">
         <form>
@@ -83,8 +79,8 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="colo-2-in-1">
+              <textarea name="" id="" cols="90" rows="10"></textarea>
             </div>
           </div>
         </form>
@@ -166,26 +162,17 @@
       <mat-step [stepControl]="other" label="Next of kin">
         <div class="" id="patient-details">
           <div class="colo-2-in-1">
-          
-
             <div class="form-group">
-              <input
-                class="form-input"
-                type="text"
-                placeholder="Full Name"
-              />
+              <input class="form-input" type="text" placeholder="Full Name" />
             </div>
 
-          
             <div class="form-group">
               <select id="cars" class="form-select" name="Relationship">
-                <option value="">Wife </option>
-                <option value="">Child </option>
-                <option value="">Wife </option>
-               
+                <option value="">Wife</option>
+                <option value="">Child</option>
+                <option value="">Wife</option>
               </select>
             </div>
-
           </div>
 
           <div class="colo-2-in-1">
@@ -206,7 +193,6 @@
             </div>
           </div>
 
-       
           <div class="colo-2-in-1">
             <div class="form-group">
               <select id="cars" class="form-select" name="Gender">
@@ -294,7 +280,7 @@
       </mat-step>
     </mat-stepper>
 
-    <div class="">
+    <div class="btn-cta">
       <button class="btn btn-default">Continue</button>
     </div>
   </form>

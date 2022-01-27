@@ -91,6 +91,9 @@
 
 .main-body {
   width: 100%;
+  // margin: auto;
+  // background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .profile-image-container {
@@ -120,13 +123,8 @@
   width: 3rem;
 }
 
-.main-left {
-  background-color: rgb(232, 243, 243);
-  color: black;
-}
-
 .main-right {
-  background-color: rgb(235, 235, 235);
+  // background-color: rgb(235, 235, 235);
   color: black;
 }
 

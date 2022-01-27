@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Patient } from '../dto/patient-details';
 
-const BASE_URL = 'http://localhost:3000/patient';
+const BASE_URL = 'https://my-json-server.typicode.com/acquahsamuel/json-db/patient';
 
 @Injectable({
   providedIn: 'root'
