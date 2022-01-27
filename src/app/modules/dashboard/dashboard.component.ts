@@ -21,7 +21,6 @@ export class DashboardComponent implements OnInit {
   title = '';
   username = 'username';
   userProfile = './assets/images/placeholder.png';
-
   isLoading = false;
 
   user = {
@@ -33,3 +32,5 @@ export class DashboardComponent implements OnInit {
     this.router.navigateByUrl('/login')
   }
 }
+
+

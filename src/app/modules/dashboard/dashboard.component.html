@@ -2,11 +2,6 @@
   <mat-drawer #drawer class="dashboard-sidenav" mode="side" opened>
     <div class="sidebar-wrapper">
       <div class="header">
-        <!-- <img
-          src="./assets/images/job-logo-dark.svg"
-          class="logo-image"
-          alt="user profile"
-        /> -->
         <p>Logo</p>
 
         <nav class="navigation">
@@ -19,11 +14,11 @@
         </nav>
       </div>
 
-      <hr />
+
       <div class="footer">
         <p class="username-tag">Jordan Peterson</p>
-        <hr />
-        <button class="btn btn-blue-light">Logout</button>
+        <!-- <hr /> -->
+        <button (click)="logout()" class="btn btn-blue-light">Logout</button>
       </div>
     </div>
   </mat-drawer>
@@ -40,12 +35,6 @@
 
     <div class="profile-image-container">
       <img [src]="userProfile" class="user-image" alt="profile image" />
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="logout()">
-          Logout <mat-icon> power_settings_new </mat-icon>
-        </button>
-        <button mat-menu-item>Enroll <mat-icon>add</mat-icon></button>
-      </mat-menu>
     </div>
   </div>
 
