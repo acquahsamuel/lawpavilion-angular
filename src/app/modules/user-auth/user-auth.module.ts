@@ -5,14 +5,11 @@ import { MaterialModule } from 'src/app/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserAuthRoutingModule } from './user-auth-routing.module';
 import { LoginComponent } from './pages/login/login.component';
-import { SignupComponent } from './pages/signup/signup.component';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
-    SignupComponent,
-
   ],
   imports: [
     CommonModule,
