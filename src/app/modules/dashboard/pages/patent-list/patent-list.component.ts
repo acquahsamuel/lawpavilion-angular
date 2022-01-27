@@ -26,17 +26,16 @@ const ELEMENT_DATA: PatientDetails[] = [
   { profileImage: 'assets/images/placeholder.png', name: "Samuel", gender: 'F', age: 20, phoneNumber: 293302323, address: 'Hello Connect' },
   { profileImage: 'assets/images/placeholder.png', name: "Samuel", gender: 'F', age: 20, phoneNumber: 293302323, address: 'Hello Connect' },
   { profileImage: 'assets/images/placeholder.png', name: "Samuel", gender: 'F', age: 20, phoneNumber: 293302323, address: 'Hello Connect' },
-
 ];
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  selector: 'app-patent-list',
+  templateUrl: './patent-list.component.html',
+  styleUrls: ['./patent-list.component.scss']
 })
 
 
-export class ProfileComponent implements OnInit {
+export class PatentListComponent implements OnInit {
 
   constructor() { }
 

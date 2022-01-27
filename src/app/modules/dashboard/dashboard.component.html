@@ -1,19 +1,29 @@
 <mat-drawer-container class="dashboard-container" autosize>
   <mat-drawer #drawer class="dashboard-sidenav" mode="side" opened>
     <div class="sidebar-wrapper">
-      <div class="logo">
+      <div class="header">
         <!-- <img
           src="./assets/images/job-logo-dark.svg"
           class="logo-image"
           alt="user profile"
         /> -->
         <p>Logo</p>
+
+        <nav class="navigation">
+          <button class="btn btn-blue-light">
+            <a routerLink="patient-details"> Patient Register </a>
+          </button>
+          <button class="btn btn-blue-light">
+            <a routerLink="register-patient"> Patient List </a>
+          </button>
+        </nav>
       </div>
 
       <hr />
       <div class="footer">
-        <p class="username-tag"> </p>
-        <button class="btn btn-blue-light"><mat-icon> logout </mat-icon> Logout</button>
+        <p class="username-tag">Jordan Peterson</p>
+        <hr />
+        <button class="btn btn-blue-light">Logout</button>
       </div>
     </div>
   </mat-drawer>
@@ -28,9 +38,8 @@
       <i class=""> <mat-icon> fiber_manual_record </mat-icon> </i>
     </div>
 
-    <div class="image-container">
+    <div class="profile-image-container">
       <img [src]="userProfile" class="user-image" alt="profile image" />
-
       <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="logout()">
           Logout <mat-icon> power_settings_new </mat-icon>

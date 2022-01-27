@@ -23,12 +23,12 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 
 
 @Component({
-  selector: 'app-post-job',
-  templateUrl: './post-job.component.html',
-  styleUrls: ['./post-job.component.scss']
+  selector: 'app-register-patient',
+  templateUrl: './register-patient.component.html',
+  styleUrls: ['./register-patient.component.scss']
 })
 
-export class PostJobComponent implements OnInit {
+export class RegisterPatientComponent implements OnInit {
   loading = false;
   isLinear = false;
   submitted = false;

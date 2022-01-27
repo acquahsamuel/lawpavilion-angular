@@ -10,10 +10,42 @@
   color: #fff;
 }
 
-.logo {
+.sidebar-wrapper {
+  height: 100vh;
   display: flex;
-  align-items: flex-start;
-  padding: 1rem 1.5rem;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+  margin-top: 2rem;
+}
+
+.navigation {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.navigation .btn {
+  margin-bottom: 5px;
+}
+
+.navigation .btn a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
 }
 
 .logo-image {
@@ -24,30 +56,6 @@
 .menu-title {
   text-transform: uppercase;
   margin-left: 1.5rem;
-}
-
-.sidebar-wrapper {
-  display: flex;
-  flex-direction: column;
-  // border: 1px solid brown;
-  height: 100vh;
-  box-sizing: border-box;
-  justify-content: space-between;
-}
-
-
-
-.nav-link {
-  height: 45px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  text-align: left;
 }
 
 .dashboard-sidenav-content {
@@ -66,22 +74,18 @@
   border: none;
   margin-left: 3rem;
   border: 1px solid rgb(207, 205, 205);
-  // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-
 
 .main-body {
   width: 100%;
 }
 
-.image-container {
+.profile-image-container {
   border-radius: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 1.4rem;
-  border: 1px solid blue;
 }
 
 .search-container {
@@ -90,12 +94,11 @@
   position: relative;
 }
 
-.search-container mat-icon{
+.search-container mat-icon {
   position: absolute;
   top: 10px;
   right: 5px;
   color: dodgerblue;
-
 }
 
 .user-image {
@@ -120,4 +123,27 @@
 
 .mat-grid-tile {
   background: lightblue;
+}
+
+.footer {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  padding: 1rem 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-blue-light {
+  background: rgba(68, 119, 247, 0.25);
+  color: white;
 }

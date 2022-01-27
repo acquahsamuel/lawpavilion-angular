@@ -3,17 +3,15 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/material.module';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { YourPostsComponent } from './pages/your-posts/your-posts.component';
-import { PostJobComponent } from './pages/register-patient/post-job.component';
-import { ProfileComponent } from './pages/patient-list/profile.component';
+import { PatentListComponent } from './pages/patent-list/patent-list.component';
+import { RegisterPatientComponent } from './pages/register-patient/register-patient.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    PostJobComponent,
-    ProfileComponent,
-    YourPostsComponent,
+    PatentListComponent,
+    RegisterPatientComponent
   ],
 
   imports: [
